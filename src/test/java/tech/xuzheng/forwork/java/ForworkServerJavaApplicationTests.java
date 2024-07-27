@@ -30,6 +30,7 @@ class ForworkServerJavaApplicationTests {
             draft.setPassword("xz010912");
             draft.setCreateTime(LocalDateTime.now());
             draft.setUpdateTime(LocalDateTime.now());
+
         }));
         List<String> names2 = sqlClient.createQuery(table)
                 .where(table.userId().eq(1L))
